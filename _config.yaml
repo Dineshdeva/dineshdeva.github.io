@@ -1,3 +1,36 @@
-theme: jekyll-theme-minimal
-title: Dinesh Devaraj's Resume
-description: Dinesh Devaraj's Resume
+theme: minima
+title: Dinesh Devaraj's Portfolio
+description: About me - Guidewire InsuranceSuite Developer
+url: "https://dineshdeva.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+
+# Include custom assets
+include:
+  - _pages
+  - assets
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
