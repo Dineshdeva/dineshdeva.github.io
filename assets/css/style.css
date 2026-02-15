@@ -92,8 +92,6 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 1;
 }
 
 .hero-content {
@@ -102,6 +100,8 @@ body {
     gap: 4rem;
     align-items: center;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .hero-title {
