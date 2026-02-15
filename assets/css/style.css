@@ -90,9 +90,34 @@ body {
     color: white;
     overflow: hidden;
     min-height: 100vh;
+    max-height: 100vh;  /* Add max-height */
     display: flex;
     align-items: center;
 }
+
+/* About Section */
+#about {
+    margin-top: 0;  /* Remove any top margin */
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+
+.section {
+    padding: 80px 0;
+    position: relative;
+    background: inherit;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: #343638;
+}
+
 
 .hero-content {
     display: grid;
@@ -255,8 +280,8 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: #343638;
 }
 
@@ -273,7 +298,9 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
+    position: static;
+    z-index: auto;
 }
 
 .about-text p {
@@ -752,14 +779,16 @@ body {
 
     .hero {
         padding: 60px 0 30px;
-        min-height: 60vh;
+        min-height: auto;  /* Changed from 60vh to auto */
         display: flex;
         align-items: center;
         overflow-x: hidden;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
+    }
+    
+    .about-title {
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .hero-content {
@@ -911,6 +940,7 @@ body {
 
     .hero {
         padding: 80px 0 40px;
+        min-height: auto;  /* Add this */
     }
 
     .hero-title {
